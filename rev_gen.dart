@@ -34,9 +34,10 @@ class PairsLine {
 
   void sort() {
     dests.sort((a, b) {
-      if (a.s < b.s) return -1;
-      if (a.s == b.s) return 0;
-      return 1;
+      if (a.s == b.s) {
+        return a.a - b.a;
+      }
+      return a.s - b.s;
     });
   }
 }
@@ -138,8 +139,7 @@ void main() {
       if (a.src.s == b.src.s) {
         return a.src.a - b.src.a;
       }
-      if (a.src.s < b.src.s) return -1;
-      return 1;
+      return a.src.s - b.src.s;
     });
     List<String> lines = [];
     Set<String> seen = {};
@@ -149,7 +149,6 @@ void main() {
       seen.add(str);
       lines.add(str);
     }
-    // print("generated: gen/$fileName");
     File("rev/$fileName").writeAsString(lines.join('\n'));
   }
 }

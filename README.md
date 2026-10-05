@@ -70,4 +70,4 @@ The data is available in the file `mutashabihat_data.json`. You can generate it 
 
 ## LICENSE
 
-The data in this project is free to use as you see fit. However, I would appreciate if you mention the use of this project in your app or any other kind of work if you decide to use this data.
+The data in this project is free to use as you see fit under the [CC0 1.0 Universal](LICENSE) dedication. However, I would appreciate if you mention the use of this project in your app or any other kind of work if you decide to use this data.
